@@ -1,0 +1,58 @@
+We are building a simple rocketman.wagtail website
+
+Day 1:
+
+HEADER:
+
+-we started of with a simple html file , we linked it up with our style sheet and our JS file.
+ - while liking our JS file, we specified the link in the head of  our html file with a defer attribute.
+   The 'defer' allows the html body to completely render before executing the JS file.
+
+-added some basic html tags to our <header> like a <nav> with a container class and , inside that container
+ we had our logo <div> and our links
+
+-the layout we preferd for the header was flex-box
+
+-since the layout was flex-box, we implemented the width of the header as 100%, but since all the elements
+ of our header are stored in our container which has a max-width of 75rem, the contentns we organized properly
+
+-we then made the width of the link class to be 100% so that there would be free space present,
+ this availability of free space enables us to position our links at the end of the container
+
+-KEY POINT: we aligned all the flex items at the center to avoid any mess
+
+-from there we customized our links and gave them paddings and a font
+
+-we also incresed the height of our container so that there would be some space in the top section of
+ our html body
+
+LANDING PAGE:
+
+-we started off with giving the landing page a margin = height of header
+
+-we then proceed with trying out different options for the background image, and there were 2
+ --firtly we implement the image directly to the html body using a image tag
+ --secondly, we apply a background image to the landing section
+
+-we set up the margin, the height and width of our image and we also set certain properties related to our 
+ image, i.e. bg-size: cover and bg-position center
+
+-we then proceed further with our welcoming statement and a button for contact purpose
+
+-now comes the difficult part, we are faced with an option, either we choose grid as our layout or flex
+ --both are great in thier own ways, but using a flex to align the contents at the center of the section
+   seems more of a viable option header
+
+-KEY POINT: -since the section is a flex-box, all the childer are subjected to flex-properies and can use them
+             accordingly.
+
+            EXAMPLE: our landing section is of flex type, and hence our container can align itself
+            inside the flex box as it is a direct child of it.
+
+            -we can change the brighntess of the background image using the linear-gradient function
+
+-we then gave each of the seperate divs(landing-text and cta) thier respective CSS and customized thier
+ element and children
+
+-for the contact button, to lower the button a bit and to avoid any miss assembling of our text content
+ we applied relative postioning to our button and lowered it by 2rems
