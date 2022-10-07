@@ -41,6 +41,10 @@ ul{
     padding: 0 1.2rem;
 }
 
+a.btn::selection,a > span::selection{
+    background-color: transparent;
+}
+
 /* Header CSS */
 
 header{
@@ -96,6 +100,11 @@ nav.container{
     font-weight: 300;
     color: #141414;
     text-transform: uppercase;
+    transition: .2s;
+}
+
+.nav-link.change{
+    color: whitesmoke;
 }
 
 /* Landing page */
