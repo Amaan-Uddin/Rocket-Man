@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
 
 :root{
     --text-color: #141414;
@@ -109,8 +109,8 @@ section.landing-page{
 .landing-page{
     margin-top: 140px;
     width: 100%;
-    height: 640px;
-    max-height: 640px;
+    height: 685px;
+    max-height: 685px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,.6)),url('images/image_6.jpg');
     /* since adding a filter:brighntness() will effect the contents laid on this html section 
     we use the linear gradient to dynamically change the brightness of our image*/
@@ -171,4 +171,80 @@ section.landing-page{
     color: black;
 }
 
+/* simple Text */
 
+.simple-text h1{
+    font-size: 1.65rem;
+    color: #141414;
+    font-weight: 300;
+    padding: 6.25rem 0;
+    text-align: center;
+}
+
+/* service cards */
+
+.service-card .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2.5rem;
+    overflow: hidden;
+}
+
+.srv-card,.srv-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.srv-card{
+    position: relative;
+    border: 1px solid #8989897d;
+    height: auto;
+    width: 100%;
+}
+
+.srv-card img{
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 1.5/1;  not necessary yet*/
+}
+
+.srv-text{
+    padding: 3.45rem;
+    padding-bottom: 2rem;
+    color: #141414;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.srv-text h3{
+    font-size: 1.3rem;
+}
+
+.srv-text p{
+    font-weight: 300;
+    font-size: 1.35rem;
+    margin-top: 1.2rem;
+}
+
+.srv-card .btn.secondary{
+    padding: 0px;
+    color: rgb(103, 0, 163);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    /* border: 1px solid black; */
+}
+
+.btn.secondary span{
+    position: relative;
+    top: 2px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.btn.secondary:hover span{
+    margin-left: 5px;
+}
