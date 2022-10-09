@@ -84,3 +84,30 @@ SERVICE CARDS:
 
             -we managed to scale down the webpage to 90% on reload, meaning our initial zoom will be from 0.9
             -> document.body.style.zoom = .9
+
+
+Day 4:
+
+SERVICE TABS:
+-probably one of the hardest sections i've done yet
+
+-started with working on implementing a sol to change the color of the links through JS, couldn't come up
+ with anything, but i did discover what 'Interseting Observers API' are in the process and might try and implement them
+
+-the most difficult part was not designing the website, it was designing the website while being sick and helpless
+ -but we managed .
+
+-it took me quite a while to figure out which layout to choose for the section element and it's children
+
+-after that i decided to insert the image directly through an <img> tag, but that didn't end well
+ -because without pre-fixig the height of the image as 33rem, the 2nd image would overflow it's parent
+ and it lead to alot of issues, so we decided to implement these images as background-image of a <div>
+
+-after that we had to figure out a way to implement those depth SERVICE box/cards and , was quite easy
+
+all and all I'm not quite satisfied with today's progress, will diffenetly try and improve my design 
+and layout
+
+-KEY POINT: -we got to know about Intersecting Observers and Modal and Dialog elements
+
+            -we discovred what scroll-animations are and how they can be implemented
