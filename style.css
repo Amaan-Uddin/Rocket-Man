@@ -196,7 +196,6 @@ section.landing-page{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 2.5rem;
-    overflow: hidden;
 }
 
 .srv-card,.srv-text{
@@ -207,7 +206,8 @@ section.landing-page{
 
 .srv-card{
     position: relative;
-    border: 1px solid #8989897d;
+    /* border: 1px solid #8989897d; */
+    box-shadow: 2px 3px 10px #8989897d;
     height: auto;
     width: 100%;
 }
@@ -256,4 +256,71 @@ section.landing-page{
 
 .btn.secondary:hover span{
     margin-left: 5px;
+}
+
+/* service post */
+
+.service{
+    position: relative;
+    padding: 9rem 0;
+}
+
+.service .container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.srv-s{
+    display: grid;
+    grid-template-columns: 47rem 1fr;
+    align-items: end;
+    width: 100%;
+    height: 33rem;
+    max-height: 35rem;
+    margin-bottom: 9rem;
+}
+
+.srv-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.srv-s:nth-child(1) .srv-img{
+    background-image: url("images/image_8.jpg");
+}
+.srv-s:nth-child(2) .srv-img{
+    background-image: url("images/image_7.jpg");
+}
+.srv-s:nth-child(3) .srv-img{
+    background-image: url("images/image_6.jpg");
+}
+
+.srv-box{
+    position: relative;
+    right: 10rem;
+    top: 4rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem;
+    background-color: black;
+    z-index: 5;
+}
+
+.srv-box h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.srv-box p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
 }
