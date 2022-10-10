@@ -13,6 +13,7 @@
 body{
     font-family: "Poppins",sans-serif;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html{
@@ -163,6 +164,7 @@ section.landing-page{
 }
 
 .btn{
+    white-space: nowrap;
     padding: 15px 40px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -170,8 +172,9 @@ section.landing-page{
     color: #fff;
     font-size: 1.15rem;
     background: linear-gradient(to right,#fff 50%,rgba(0,0,0,0) 50%);
+    background-repeat: no-repeat;
     background-position: right;
-    background-size: 300% 100%;
+    background-size: 200% 100%;
     transition: .5s ease;
 }
 
@@ -238,12 +241,12 @@ section.landing-page{
 
 .srv-card .btn.secondary{
     padding: 0px;
-    color: rgb(103, 0, 163);
+    color: rgb(136, 2, 219);
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 1rem;
     margin-bottom: 2.5rem;
-    /* border: 1px solid black; */
+    transition: .3s ease;
 }
 
 .btn.secondary span{
@@ -251,7 +254,7 @@ section.landing-page{
     top: 2px;
     font-size: 1.3rem;
     font-weight: 400;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .btn.secondary:hover span{
@@ -262,7 +265,7 @@ section.landing-page{
 
 .service{
     position: relative;
-    padding: 9rem 0;
+    padding: 9rem 0 0 0;
 }
 
 .service .container{
@@ -279,6 +282,21 @@ section.landing-page{
     height: 33rem;
     max-height: 35rem;
     margin-bottom: 9rem;
+}
+
+.srv-s:nth-child(2){
+    display: grid;
+    grid-template-columns: .9fr 1.6fr;
+    align-items: end;
+    width: 100%;
+    height: 33rem;
+    max-height: 35rem;
+    margin-bottom: 9rem;
+}
+
+.srv-s:nth-child(2) .srv-box{
+    left: 10rem;
+    right: 0;
 }
 
 .srv-img{
@@ -312,7 +330,7 @@ section.landing-page{
 
 .srv-box h2{
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: capitalize;
     color: #fff;
     margin-bottom: 1.2rem;
@@ -323,4 +341,133 @@ section.landing-page{
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 1.2rem;
+}
+
+/* simple text end */
+
+.simple-text.sec .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simple-text.sec h1{
+    font-size: 1.75rem;
+    padding-bottom: 3rem;
+}
+
+.btn.sec{
+    color: rgb(136, 2, 219);
+    border: 3px solid rgb(136, 2, 219);
+    background: linear-gradient(to right, #fff 50%, rgb(136, 2, 219) 50%);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 200% 110%;    
+}
+
+a.sec:hover{
+    background-position: right;
+    color: #fff;
+}
+
+/* ending quote */
+
+blockquote{
+    position: relative;
+    padding: 5rem 0;
+}
+.quote .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 7rem;
+}
+
+.quote q{
+    color: #2e2c38;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+}
+
+.quote div{
+    margin-top: 2rem;
+    color: #2e2c38;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+section.final{
+    background-color: rgb(136, 2, 219);
+}
+
+section.final .container{
+    display: flex;
+    align-items: center;
+    padding: 7rem 1rem;
+}
+
+.final-txt{
+    margin-right: 9rem;
+}
+
+.final-txt h1{
+    font-size: 2.35rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.final-txt p{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* footer */
+
+footer{
+    background-color: #141414;
+    padding: 4rem;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1rem;
+    /* color:#8989897d; */
+    color: #fff;
+    margin: 1rem 20rem;
+}
+
+.socials{
+    display: flex;
+    padding: 0 3rem;
+    border-bottom: 2px solid #8989897d;
+}
+.social-link{
+    margin: 1rem 1.5rem;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: .3s;
+}
+
+.social-link:hover{
+    background-color: rgb(136, 2, 219);
+    border-color: rgb(136, 2, 219);
 }
